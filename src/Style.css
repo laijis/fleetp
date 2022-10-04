@@ -1,0 +1,65 @@
+
+
+/* Fleetp Layout*/
+
+.wrapper-holder {
+  position: relative;
+  top: 0;
+  height: 100vh;
+}
+
+.logo img {
+  width:20%;
+}
+
+.sidebar .logo {
+  padding: 15px 0px;
+  margin: 0;
+  display: block;
+  position: relative;
+  z-index: 4;
+}
+
+.sidebar, .main-panel {
+  height: 100%;
+  max-height: 100%;
+}
+
+.sidebar, .main-panel {
+  -webkit-transition-property: top, bottom, width;
+  transition-property: top, bottom, width;
+  -webkit-transition-duration: .2s, .2s, .35s;
+  transition-duration: .2s, .2s, .35s;
+  -webkit-transition-timing-function: linear, linear, ease;
+  transition-timing-function: linear, linear, ease;
+  -webkit-overflow-scrolling: touch;;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 260px;
+  background: #fff;
+  box-shadow: 0 16px 38px -12px rgb(0 0 0 / 56%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+.main-panel {
+  position: relative;
+  float: right;
+  width: calc(100% - 260px);
+  transition: 0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.ps-container {
+  -ms-touch-action: auto;
+  touch-action: auto;
+  overflow: hidden !important;
+  -ms-overflow-style: none;
+}
+.card-header.card-header-primary{
+  text-align: left;
+}
+/* End Fleetp Layout*/
